@@ -1,0 +1,91 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  section {
+    width: 599px;
+    margin: 0 auto;
+    background-color: rgb(243, 252, 245);
+  }
+  /* Header Section Start */
+  header {
+    position: relative;
+    align-items: center;
+    height: 600px; 
+    background-image: url(./Assets/brooke-lark-nBtmglfY0HU-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-position-y: calc(50% - 100px);
+    overflow: hidden;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 2;
+    height: 50px;
+    margin: auto;
+    width: 500px;
+  }
+  .time{
+    color: white;
+    text-align: center;
+    font-weight:bold;
+    font-size: medium;
+  }
+  .nav-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .network-icon{
+    height: 17px;
+    width: 20px;
+  }
+  .wifi-icon{
+    height: 22px;
+    width: 20px;
+  }
+  .battery-icon{
+    height: 30px;
+    width: 50px;
+  }
+  .button-section{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 480px;
+    margin: auto;
+  }
+  .btn-arrow, .btn-love {
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-arrow {
+    width: 60px;
+    height: 60px;
+}
+
+.btn-love {
+    width: 50px;
+    height: 50px;
+}
+  .leftArrow-icon, .love-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+  }
+  /* Header Section End */
