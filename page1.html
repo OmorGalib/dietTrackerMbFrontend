@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diet Tracker</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
 </head>
 <body>
   <section>
-    <nav>
-      <h4>12:50</h4>
-      <div>
-        <img src="./Assets/network.svg" alt="Network">
-        <img src="./Assets/wifi.svg" alt="Wifi">
-        <img src="./Assets/battery.svg" alt="Battery">
+    <header>
+      <nav>
+          <p class="time">12:50</p>
+          <div class="nav-icons">
+              <img src="./Assets/network.svg" alt="Network" class="network-icon">
+              <img src="./Assets/wifi.svg" alt="Wifi" class="wifi-icon">
+              <img src="./Assets/battery.svg" alt="Battery" class="battery-icon">
+          </div>
+      </nav>
+      <div style="width: 599px; height: 220px; position: relative;">
+          <img src="./Assets/bg4.png" style="width: 599px; height: 640px; position: absolute; top: -270px; right: 0; transform: rotate(0deg);">
+          <img src="./Assets/bg2.png" style="width: 595px; height: full; position: absolute; top: -90px; left: 0; transform: rotate(3deg)">
       </div>
-    </nav>
+  </header>
+  
     <div class="hero-section">
-      <img src="./Assets/undraw_workout_gcgu.png" alt="Workout">
+      <img src="./Assets/undraw_workout_gcgu.png" alt="" class="workout-image">
       <h1>Let's do your diet <span>Katy</span></h1>
-      <input placeholder="What is your current weight?" type="number" id="weight" name="weight">
-      <input placeholder="What is your current height?" type="number" id="height" name="height">
+      <input class="input-weight" placeholder="What is your current weight?" name="weight">
+      <input class="input-height" placeholder="What is your current height?" name="height">
     </div>
     <div class="down-section">
       <p>1/4 steps</p>
-      <div class="button-section">
-        <button type="submit"><img src="./Assets/Group 549.svg" alt="Next Arrow"></button>
+      <div class="button-coloumn">
+        <button type="submit"><img src="./Assets/Group 549.svg" alt="Next Arrow" class="arrow-icon"></button>
         <p>Next</p>
       </div>
+      <div class="empty-coloumn"></div>
     </div>
   </section>
 </body>
