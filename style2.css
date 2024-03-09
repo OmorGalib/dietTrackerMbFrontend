@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+@media only screen and (max-width: 599px) {
   body {
     font-family: "Open Sans", sans-serif;
   }
@@ -16,13 +17,14 @@
   header {
     position: relative;
     align-items: center;
-    height: 600px; 
+    height: 500px; 
     background-image: url(./Assets/brooke-lark-nBtmglfY0HU-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-    background-position-y: calc(50% - 100px);
+    background-position-y: calc(50% - 50px);
     overflow: hidden;
+    margin-bottom: 50px;
   }
   nav {
     display: flex;
@@ -89,3 +91,139 @@
     margin: auto;
   }
   /* Header Section End */
+  /* Container Start*/
+
+  .container {
+    width: 450 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .info-container, .ingre-container, .pre-container{
+    width: 450px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .ingre-container {
+    height: 180px;
+  }
+  .info-items{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: auto;
+  }
+  .ingre-items {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .item1,.item2,.item3,.item4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .para {
+    font-size: small;
+    color:black;
+  }
+  p {
+    font-size: smaller;
+     color: darkgray;
+  }
+  h1{
+    font-weight: bolder;
+    font-size:40px;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  h4 {
+    font-weight: lighter;
+    font-size: medium;
+    padding-top: 10px;
+  }
+  .ingre-images {
+    height: 80px;
+    width: 80px;
+  }
+  /* Container End */
+  /* Down Container Starts*/
+  .down-container {
+    width: 599px;;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 0; 
+  }
+  .nav-container {
+    width: 450px;
+    margin-top: 20px;
+    display:inline-flex;
+    padding-left: 30px;
+  }
+  .home-button {
+    width: 150px;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgreen;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .home-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .navIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icons {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .text {
+    margin-top: 4px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+  }
+  /* Down Container End */
+} 
+  
